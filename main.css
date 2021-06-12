@@ -1,0 +1,146 @@
+html,
+body {
+  min-width: 25%;
+  background-color: #7181a4;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid rgba(101, 104, 116, 0.4);
+  background-color: #314a76;
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  color: #e5e5e1;
+  text-shadow: 1px 1px 2px #ee3311;
+}
+
+#main-doc header {
+  text-align: left;
+  margin-left: 15px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #28282d;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #979ba8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  color: #e5e5e1;
+  text-shadow: 1px 1px 2px #ee3311;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+.main-section header {
+  margin-top: 2rem;
+}
+
+.main-section a {
+  text-decoration: none;
+  color: #314a76;
+}
+
+.main-section a:hover {
+  color: #e5e5e1;
+  text-shadow: 1px 1px 2px #ee3311;
+}
+
+section article {
+  color: #333;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f0eee9;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  color: #7181a4;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -5px;
+    width: 90%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
